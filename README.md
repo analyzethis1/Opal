@@ -37,6 +37,8 @@
 - **Animation Presets** - Off (0ms), Fast (300ms), Smooth (800ms)
 - **Hover Themes** - Light/dark tooltips with intensity control
 
+![Opal demo](images/Opal%20demo3.png)
+
 ### 💾 **Data Management**
 - **Multi-File Support** - Upload and merge multiple datasets
 - **Data Merging** - Concatenate or join files on common columns
@@ -51,6 +53,7 @@
 - **Preset System** - Save and load styling templates
 - **LocalStorage Persistence** - Presets saved locally
 
+![Opal demo](images/Opal%20demo5.png)
 
 
 ## 📚 Usage Guide
@@ -64,18 +67,14 @@
 5. **🎯 Interact** - Explore data with filtering and drill-down
 6. **📄 Export** - Generate high-resolution outputs
 
-![Opal demo](images/Opal%20demo3.png)
-![Opal demo](images/Opal%20demo5.png)
-
 ### Advanced Features
 
 #### Data Merging
 - **Concatenate** - Stack datasets vertically with source file tracking
+    ![Opal demo](images/Opal%20demo6.png)
 - **Join** - Merge datasets on common column values
+    ![Opal demo](images/Opal%20demo7.png)
 - **Column Mapping** - Rename columns before charting
-- 
-  ![Opal demo](images/Opal%20demo6.png)
-  ![Opal demo](images/Opal%20demo7.png)
   ![Opal demo](images/Opal%20demo2.png)
 
 #### Mixed Charts
