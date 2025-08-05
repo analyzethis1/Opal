@@ -51,36 +51,7 @@
 - **Preset System** - Save and load styling templates
 - **LocalStorage Persistence** - Presets saved locally
 
-## 🚀 Quick Start
 
-### Prerequisites
-- Node.js 16+ and npm
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/your-org/opal-chart-generator.git
-cd opal-chart-generator
-
-# Install dependencies
-npm install
-
-# Start development server
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view Opal in your browser.
-
-### Building for Production
-
-```bash
-# Create optimized production build
-npm run build
-
-# The build folder contains static files ready for deployment
-```
 
 ## 📚 Usage Guide
 
@@ -180,17 +151,6 @@ src/
 - Mixed chart support with dual Y-axes
 - Professional tooltip and legend customization
 
-## 🔧 Configuration
-
-### Environment Variables
-```bash
-# Optional: Custom port (default: 3000)
-PORT=3001
-
-# Optional: Build output directory (default: build)
-BUILD_PATH=dist
-```
-
 ### Browser Support
 - Chrome 80+
 - Firefox 75+
@@ -211,39 +171,6 @@ BUILD_PATH=dist
 - **Client-Side Only** - Files never leave the user's browser
 - **No External Dependencies** - Charts generated without external APIs
 - **LocalStorage Only** - Presets stored locally, no server persistence
-
-## 🚀 Deployment
-
-### Static Hosting (Recommended)
-```bash
-npm run build
-# Deploy the 'build' folder to any static file server
-```
-
-### Docker Deployment
-```dockerfile
-FROM nginx:alpine
-COPY build/ /usr/share/nginx/html/
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
-```
-
-## 🤝 Contributing
-
-### Development Setup
-```bash
-# Install dependencies
-npm install
-
-# Start development server with hot reload
-npm start
-
-# Run type checking
-npm run build
-
-# Run linting (if configured)
-npm run lint
-```
 
 ### Code Style
 - TypeScript for type safety
