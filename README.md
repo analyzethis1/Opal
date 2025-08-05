@@ -2,7 +2,7 @@
 
 > Transform your data with iridescent brilliance
 
-**Opal** is a sophisticated, web-based chart generation tool designed specifically for the Places PMO team. Built with React and TypeScript, it transforms CSV and Excel data into interactive, presentation-ready visualizations with professional styling and advanced features.
+**Opal** is a sophisticated, web-based chart generation tool designed specifically for a Busienss Operations team. Built with React and TypeScript, it transforms CSV and Excel data into interactive, presentation-ready visualizations with professional styling and advanced features.
 
 ![Opal demo](images/Opal%20demo1.png)
 
@@ -215,6 +215,6 @@ src/
 
 ---
 
-**Built with 💎 for PMO Business Operations**
+**Built with 💎 for Business Operations**
 
 *Transform your data with iridescent brilliance*
