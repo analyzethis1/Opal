@@ -64,7 +64,6 @@
 5. **🎯 Interact** - Explore data with filtering and drill-down
 6. **📄 Export** - Generate high-resolution outputs
 
-![Opal demo](images/Opal%20demo2.png)
 ![Opal demo](images/Opal%20demo3.png)
 ![Opal demo](images/Opal%20demo5.png)
 
@@ -77,6 +76,7 @@
 - 
   ![Opal demo](images/Opal%20demo6.png)
   ![Opal demo](images/Opal%20demo7.png)
+  ![Opal demo](images/Opal%20demo2.png)
 
 #### Mixed Charts
 - Combine bar and line series in a single visualization
