@@ -4,6 +4,8 @@
 
 **Opal** is a sophisticated, web-based chart generation tool designed specifically for the Places PMO team. Built with React and TypeScript, it transforms CSV and Excel data into interactive, presentation-ready visualizations with professional styling and advanced features.
 
+![Opal demo](images/Opal%20demo1.png)
+
 ## ✨ Features
 
 ### 🎨 **Multi-Series Visualization**
@@ -91,12 +93,19 @@ npm run build
 5. **🎯 Interact** - Explore data with filtering and drill-down
 6. **📄 Export** - Generate high-resolution outputs
 
+![Opal demo](images/Opal%20demo2.png)
+![Opal demo](images/Opal%20demo3.png)
+![Opal demo](images/Opal%20demo5.png)
+
 ### Advanced Features
 
 #### Data Merging
 - **Concatenate** - Stack datasets vertically with source file tracking
 - **Join** - Merge datasets on common column values
 - **Column Mapping** - Rename columns before charting
+- 
+  ![Opal demo](images/Opal%20demo6.png)
+  ![Opal demo](images/Opal%20demo7.png)
 
 #### Mixed Charts
 - Combine bar and line series in a single visualization
@@ -109,11 +118,14 @@ npm run build
 - Area fill toggles for enhanced visualization
 - Professional color palette with 16 opal-inspired hues
 
+  ![Opal demo](images/Opal%20demo4.png)
+
 #### Interactive Features
 - Click any chart element to filter data
 - Visual filter breadcrumbs with individual removal
 - Zoom and pan for detailed exploration
 - Configurable hover effects and tooltips
+
 
 ## 🎨 Design Philosophy
 
@@ -277,6 +289,6 @@ npm run lint
 
 ---
 
-**Built with 💎 for Biz Ops**
+**Built with 💎 for PMO Business Operations**
 
 *Transform your data with iridescent brilliance*
