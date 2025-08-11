@@ -17,7 +17,7 @@
 - **Smart Titles** - Auto-generated descriptive chart titles
 - **Optimal Chart Types** - Recommends best visualization for your data relationships
 
-- ![Opal demo](images/Opal%20demo8.png)
+  ![Opal demo](images/Opal%20demo8.png)
 
 ### 🎨 **Multi-Series Visualization**
 - Select multiple Y-columns for comprehensive data comparison
