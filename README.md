@@ -4,7 +4,7 @@
 
 **Opal** is a sophisticated, web-based intelligent data visualization platform designed specifically for a Business Operations team. Built with React and TypeScript, it transforms CSV and Excel data into interactive, presentation-ready visualizations with professional styling and advanced AI-powered features.
 
-![Opal](images/Opal.gif)
+![Opal demo](images/Opal.gif)
 
 ## ✨ Features
 
