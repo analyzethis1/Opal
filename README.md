@@ -1,12 +1,23 @@
-# 💎 Opal - Interactive Chart Generator
+# 💎 Opal - Intelligent Data Visualization Platform
 
 > Transform your data with iridescent brilliance
 
-**Opal** is a sophisticated, web-based chart generation tool designed specifically for a Busienss Operations team. Built with React and TypeScript, it transforms CSV and Excel data into interactive, presentation-ready visualizations with professional styling and advanced features.
+**Opal** is a sophisticated, web-based intelligent data visualization platform designed specifically for a Business Operations team. Built with React and TypeScript, it transforms CSV and Excel data into interactive, presentation-ready visualizations with professional styling and advanced AI-powered features.
 
 ![Opal demo](images/Opal%20demo1.png)
 
 ## ✨ Features
+
+### ✨ **Smart Chart Suggestions (NEW!)**
+- **AI-Powered Analysis** - Intelligent data structure analysis (100% client-side)
+- **Multiple Suggestions** - 3-4 smart chart options based on your data
+- **Live Chart Previews** - See actual miniature charts before choosing
+- **Data-Aware Intelligence** - Automatically detects dates, categories, and numeric patterns
+- **One-Click Application** - Instantly apply suggested chart configurations
+- **Smart Titles** - Auto-generated descriptive chart titles
+- **Optimal Chart Types** - Recommends best visualization for your data relationships
+
+- ![Opal demo](images/Opal%20demo8.png)
 
 ### 🎨 **Multi-Series Visualization**
 - Select multiple Y-columns for comprehensive data comparison
@@ -66,6 +77,23 @@
 4. **🎨 Customize** - Apply styling, colors, and advanced options
 5. **🎯 Interact** - Explore data with filtering and drill-down
 6. **📄 Export** - Generate high-resolution outputs
+
+### Smart Chart Suggestions
+
+#### How It Works
+1. **Upload your data** - Any CSV or Excel file
+2. **Click "✨ Smart Chart Suggestions"** - Located prominently in the Chart Configuration
+3. **Review AI recommendations** - See 3-4 intelligent chart suggestions with live previews
+4. **Choose your favorite** - Click "Use This Chart" on any suggestion
+5. **Customize further** - Fine-tune the applied configuration as needed
+
+#### Intelligence Features
+- **Time Series Detection**: Automatically finds date columns for trend analysis
+- **Category Analysis**: Identifies categorical data for comparison charts
+- **Correlation Discovery**: Suggests scatter plots for numeric relationships
+- **Multi-Metric Dashboards**: Combines related metrics intelligently
+- **Smart Titles**: Generates descriptive titles based on data relationships
+- **Live Previews**: Shows actual miniature charts using your real data
 
 ### Advanced Features
 
@@ -135,6 +163,7 @@ src/
 ├── components/
 │   ├── EnhancedChartConfig.tsx     # Main configuration interface
 │   ├── EnhancedChartComponent.tsx  # Chart rendering with Chart.js
+│   ├── SmartCharts.tsx             # AI-powered chart suggestions with previews
 │   ├── FileUpload.tsx              # Drag-and-drop file handling
 │   ├── DataPreview.tsx             # Data preview and column mapping
 │   ├── DataMerger.tsx              # Multi-file merging logic
@@ -186,7 +215,18 @@ src/
 
 ## 📖 Changelog
 
-### v2.0.0 - Enhanced Opal (Current)
+### v2.1.0 - Smart Intelligence Update (Current)
+- ✨ **Smart Chart Suggestions** - AI-powered chart recommendations
+- ✨ **Live Chart Previews** - See actual miniature charts before choosing
+- ✨ Data structure analysis and intelligent chart type selection
+- ✨ Multiple suggestion options with reasoning explanations
+- ✨ One-click application of smart configurations
+- ✨ Auto-generated descriptive chart titles
+- 🔧 Improved dark theme text visibility
+- 🔧 Removed jarring section collapse animations
+- 🔧 Fixed pie chart color rendering for proper category visualization
+
+### v2.0.0 - Enhanced Opal
 - ✨ Multi-series chart support
 - ✨ Mixed chart types with dual Y-axes
 - ✨ Advanced styling controls
@@ -215,6 +255,6 @@ src/
 
 ---
 
-**Built with 💎 for Business Operations**
+**Built with 💎 for PMO Business Operations**
 
 *Transform your data with iridescent brilliance*
