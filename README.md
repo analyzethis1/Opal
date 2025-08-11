@@ -103,7 +103,7 @@
 - **Join** - Merge datasets on common column values
     ![Opal demo](images/Opal%20demo7.png)
 - **Column Mapping** - Rename columns before charting
-  ![Opal demo](images/Opal%20demo2.png)
+  ![Opal demo](images/Opal%data%preview.gif)
 
 #### Mixed Charts
 - Combine bar and line series in a single visualization
