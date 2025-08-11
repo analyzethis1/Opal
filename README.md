@@ -17,7 +17,7 @@
 - **Smart Titles** - Auto-generated descriptive chart titles
 - **Optimal Chart Types** - Recommends best visualization for your data relationships
 
-  ![Opal demo](images/Opal%20demo8.png)
+  ![Opal demo](images/Opal_smart_chart.gif)
 
 ### 🎨 **Multi-Series Visualization**
 - Select multiple Y-columns for comprehensive data comparison
@@ -116,7 +116,7 @@
 - Area fill toggles for enhanced visualization
 - Professional color palette with 16 opal-inspired hues
 
-  ![Opal demo](images/Opal%20demo4.png)
+  ![Opal demo](images/Opal_customization.gif)
 
 #### Interactive Features
 - Click any chart element to filter data
