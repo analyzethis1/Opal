@@ -222,9 +222,6 @@ src/
 - ✨ Multiple suggestion options with reasoning explanations
 - ✨ One-click application of smart configurations
 - ✨ Auto-generated descriptive chart titles
-- 🔧 Improved dark theme text visibility
-- 🔧 Removed jarring section collapse animations
-- 🔧 Fixed pie chart color rendering for proper category visualization
 
 ### v2.0.0 - Enhanced Opal
 - ✨ Multi-series chart support
