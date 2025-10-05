@@ -15,7 +15,7 @@
 No coding required. No data science degree needed. Just results.
 
 
-![Opal demo](images/Opal.gif)
+![Opal demo](images/Opal_landing.gif)
 
 ## ✨ Features
 
