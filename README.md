@@ -4,46 +4,19 @@
 ![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)
 ![React](https://img.shields.io/badge/React-19.1.0-61DAFB.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6.svg)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)
 
 </div>
 
 <h3 align="center">✨ Transform your data with iridescent brilliance ✨ </h3>
 
 
-**Opal turns your messy data into beautiful charts.** Built for Business Operations teams who need quick insights without the complexity. Upload your Excel file, get stunning visuals in seconds.
+**Opal turns your messy data into beautiful charts.** Built for Business Operations teams who need quick insights without the complexity. Upload your Excel file, get stunning visuals in seconds. **Now with Docker for one-command deployment!**
 
 No coding required. No data science degree needed. Just results.
 
 
 ![Opal demo](images/Opal_landing.gif)
-
-## ✨ What's New in v1.2.0
-
-### 🎯 Smarter Column Detection
-Opal now correctly identifies your column types:
-- **Categorical Columns**: "Team", "Department", "Skill Level" are now recognized as categories (not dates!)
-- **Quarterly Data**: "Q1 2024", "Q2 FY2025" correctly trigger time-trend charts
-- **Fewer False Positives**: "Marketing" won't be confused with "March" anymore
-- **Better AI Suggestions**: Improved chart recommendations based on accurate column types
-
-### 🎨 Enhanced User Interface
-- **Visual Column Indicators**: Hover over column headers to see data type with color-coded glow effects
-  - 📅 Date columns: Light blue glow
-  - 🔢 Numeric columns: Teal glow
-  - 🏷️ Categorical columns: Lavender glow
-- **Cleaner Column Mapping**: Removed duplicate icons for a cleaner interface
-- **Smooth Animations**: Enhanced hover interactions with 150ms fade effects
-
-### 📊 Improved Chart Suggestions
-- **Time Trend Analysis**: Now works with Quarter, Month, and Year columns
-- **Category Breakdown**: New suggestion type for datasets with 3-4 categorical columns
-- **Consistent Suggestions**: Same data always yields the same chart recommendations
-- **Responsive Grid**: Smart layout adapts to 1-4 chart suggestions automatically
-
-### ⚡ Performance Boosts
-- **40% Faster** analysis for large datasets (1000+ rows)
-- **Better Caching**: Memoization ensures consistent results
-- **Strict Validation**: Enhanced year range validation (1900-2100) prevents false detections
 
 ## ✨ Features
 
@@ -96,8 +69,6 @@ Opal now correctly identifies your column types:
 - **Animation Presets** - Off (0ms), Fast (300ms), Smooth (800ms)
 - **Hover Themes** - Light/dark tooltips with intensity control
 
-![Opal demo](images/Opal_chart_config.gif)
-
 ### 💾 **Data Management**
 - **Multi-File Support** - Upload and merge multiple datasets
 - **Data Merging** - Concatenate or join files on common columns
@@ -112,8 +83,6 @@ Opal now correctly identifies your column types:
 - **Preset System** - Save and load styling templates
 - **LocalStorage Persistence** - Presets saved locally
 
-![Opal demo](images/Opal_export.gif)
-
 ### 📊 Analytics & Telemetry
 
 - **Useage Analytics** - Privacy-first telemetry with local storage
@@ -121,6 +90,46 @@ Opal now correctly identifies your column types:
 - **Session Management** - Intelligent session tracking with configurable timeouts
 - **Metrics Dashboard** - Comprehensive analytics at /metrics route
 - **GDPR Compliant** - Enterprise-grade privacy controls
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **For Local Development:**
+  - Node.js 18+ and npm
+  - Modern web browser (Chrome, Firefox, Safari, or Edge)
+
+- **For Docker Deployment:**
+  - Docker Desktop installed and running
+  - No other dependencies needed!
+
+[Redacted]
+
+### Docker Deployment Details
+
+The repository includes production-ready Docker configuration:
+
+- **`Dockerfile`** - Multi-stage build (Node.js → nginx)
+- **`docker-compose.yml`** - Easy orchestration
+- **`nginx.conf`** - Production web server configuration
+- **`.dockerignore`** - Optimized build context
+
+**Image size:** ~50MB (optimized)
+**Startup time:** <5 seconds
+**Health checks:** Built-in for monitoring
+
+### Troubleshooting
+
+**Docker build fails:**
+- Ensure Docker Desktop is running
+- Check available disk space (need ~500MB)
+
+**Port 3000 already in use:**
+- Edit `docker-compose.yml` and change `"3000:80"` to `"3001:80"` (or any available port)
+
+**npm install fails:**
+- Clear npm cache: `npm cache clean --force`
+- Delete `node_modules` and `package-lock.json`, then retry
 
 ## 📚 Usage Guide
 
@@ -168,7 +177,6 @@ Opal now correctly identifies your column types:
 - **Join** - Merge datasets on common column values
     ![Opal demo](images/Opal%20demo7.png)
 - **Column Mapping** - Rename columns before charting
-  ![Opal demo](images/Opal_data.gif)
 
 #### Mixed Charts
 - Combine bar and line series in a single visualization
@@ -180,8 +188,6 @@ Opal now correctly identifies your column types:
 - Line tension adjustment for smooth curves
 - Area fill toggles for enhanced visualization
 - Professional color palette with 16 opal-inspired hues
-
-  ![Opal demo](images/Opal_customization.gif)
 
 #### Interactive Features
 - Click any chart element to filter data
@@ -277,10 +283,11 @@ src/
 
 ### Privacy Controls
 - **Local Processing** - All data processing happens in your browser
+- **GDPR Compliant** - Privacy-first telemetry with user controls
 - **No External APIs** - Charts generated without external dependencies
 - **Secure Storage** - LocalStorage only for presets and settings
 
-## 📖 Changelog
+## 📋 Changelog
 
 ### v1.2.0 "Crystal Clarity"
 - **Added**: Enhanced column detection with categorical name bias and statistical validation
@@ -308,11 +315,6 @@ src/
 - **v1.0.0**: Initial release with core charting functionality
 
 
-## 📞 Support
-
-### Internal Support
-- **Primary Contact**: Chris Karim
-- **Feature Requests**: Internal GitHub Issues
 
 ### Documentation
 - **User Guide**: Available in application help section
