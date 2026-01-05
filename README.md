@@ -1,7 +1,7 @@
 <h1 align="center"> 💎 Opal </h1>
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.2.0-blue.svg)
+![Version](https://img.shields.io/badge/version-1.3.1-blue.svg)
 ![React](https://img.shields.io/badge/React-19.1.0-61DAFB.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178C6.svg)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)
@@ -11,7 +11,7 @@
 <h3 align="center">✨ Transform your data with iridescent brilliance ✨ </h3>
 
 
-**Opal turns your messy data into beautiful charts.** Built for Business Operations teams who need quick insights without the complexity. Upload your Excel file, get stunning visuals in seconds. **Now with Docker for one-command deployment!**
+**Opal turns your messy data into beautiful charts through natural conversation.** Built for teams who need quick insights without the complexity. Upload your Excel file, get stunning visuals in seconds.
 
 No coding required. No data science degree needed. Just results.
 
@@ -39,6 +39,31 @@ No coding required. No data science degree needed. Just results.
 - **Smart Suggestions** - Chat-powered chart recommendations
 
   ![Opal demo](images/Opal_Chat.gif)
+
+### 🧠 **Conversational Intelligence** (v1.3.0 - v1.3.1)
+- **Multi-Turn Conversations** - Natural back-and-forth dialogue with context retention
+- **Intent Understanding** - Interprets complex data requests in plain language
+- **Contextual Memory** - Remembers previous requests and data state
+- **Extended Thinking Mode** - Deep reasoning with configurable token budgets (v1.3.1)
+- **Conversation → Chart Bridge** - Seamlessly create visualizations from conversation (v1.3.1)
+- **FastAPI Backend** - Floodgate integration via Apple GenAI Bridge
+- **Session Management** - Persistent conversation threads with welcome messages
+- **Smart Clarifications** - Asks intelligent follow-up questions when needed
+
+### 🧠 **Extended Thinking Mode** (v1.3.1)
+- **Deep Reasoning** - Toggle extended thinking for complex data analysis queries
+- **Token Budget Control** - 4 presets (1k, 5k, 10k, 20k tokens) with time/cost estimates
+- **Smart Model Selection** - Sonnet 3.5 for complex queries, Haiku 3.5 for simple follow-ups
+- **Visual Indicators** - Color-coded cost warnings (green/orange/pink/red)
+- **Collapsible Interface** - Clean UI that expands only when needed
+- **Real-time Estimates** - Shows expected wait time (~5-120s) based on budget
+
+### 🔄 **Conversation-to-Chart Bridge** (v1.3.1)
+- **Seamless Visualization** - "Can you make a chart?" after conversation → instant chart creation
+- **Context Preservation** - Charts auto-generated from conversation visualization hints
+- **One-Click Creation** - No need to re-specify columns or chart types
+- **Natural Flow** - Ask questions, get answers, visualize with a single request
+- **Smart Detection** - Automatically detects when user wants to visualize previous answer
 
 ### 🎨 **Multi-Series Visualization**
 - Select multiple Y-columns for comprehensive data comparison
@@ -91,46 +116,6 @@ No coding required. No data science degree needed. Just results.
 - **Metrics Dashboard** - Comprehensive analytics at /metrics route
 - **GDPR Compliant** - Enterprise-grade privacy controls
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- **For Local Development:**
-  - Node.js 18+ and npm
-  - Modern web browser (Chrome, Firefox, Safari, or Edge)
-
-- **For Docker Deployment:**
-  - Docker Desktop installed and running
-  - No other dependencies needed!
-
-[Redacted]
-
-### Docker Deployment Details
-
-The repository includes production-ready Docker configuration:
-
-- **`Dockerfile`** - Multi-stage build (Node.js → nginx)
-- **`docker-compose.yml`** - Easy orchestration
-- **`nginx.conf`** - Production web server configuration
-- **`.dockerignore`** - Optimized build context
-
-**Image size:** ~50MB (optimized)
-**Startup time:** <5 seconds
-**Health checks:** Built-in for monitoring
-
-### Troubleshooting
-
-**Docker build fails:**
-- Ensure Docker Desktop is running
-- Check available disk space (need ~500MB)
-
-**Port 3000 already in use:**
-- Edit `docker-compose.yml` and change `"3000:80"` to `"3001:80"` (or any available port)
-
-**npm install fails:**
-- Clear npm cache: `npm cache clean --force`
-- Delete `node_modules` and `package-lock.json`, then retry
-
 ## 📚 Usage Guide
 
 ### Basic Workflow
@@ -138,7 +123,7 @@ The repository includes production-ready Docker configuration:
 1. **📂 Upload Data** - Drag and drop CSV/Excel files
 2. **🔄 Merge (Optional)** - Combine multiple datasets if needed
 3. **📊 Configure Chart** - Select chart type and axes, or use AI suggestions
-4. **💬 Ask AI (Optional)** - Use natural language: "Show revenue by quarter"
+4. **💬 Ask Opal** - Use natural language: "Create a chart that shows revenue by quarter", "Which deparment had the highest variance percentage?"
 5. **🎨 Customize** - Apply styling, colors, and advanced options
 6. **🎯 Interact** - Explore data with filtering and drill-down
 7. **📄 Export** - Generate high-resolution outputs
@@ -160,14 +145,43 @@ The repository includes production-ready Docker configuration:
 - **Smart Titles**: Generates descriptive titles based on data relationships
 - **Live Previews**: Shows actual miniature charts using your real data
 
-### AI Chat Interface
+### 💬 AI Chat Interface - Ask Questions OR Create Charts
 
-#### Natrual Language Commands
-1. **Start a conversation** - Type your request in plain English
-2. **Ask for charts** - "Create a bar chart showing sales by region"
-3. **Get suggestions** - "What's the best way to visualize this data?"
-4. **Refine results** - "Make it a pie chart instead"
-5. **Security built-in** - All inputs are automatically sanitized and validated
+#### Two Modes, One Interface
+- **Conversation Mode** - Ask questions, get instant answers:
+- "How many unique departments are there?" → "There are 5 unique departments: Engineering, Sales, Marketing, HR, Operations"
+- "What's the total revenue?" → "The total revenue is $1,250,000"
+- "Which region has the highest sales?" → "North region has the highest sales at $425,000"
+
+**Visualization Mode** - Request charts in natural language:
+- "Show revenue by quarter" → Instant chart generation
+- "Compare budget vs actual by department" → Multi-chart comparison
+- "What's the best way to visualize this?" → AI-powered suggestions
+
+#### Extended Thinking Mode (v1.3.1)
+- Enable deep reasoning for complex analysis:
+1. **Click "Advanced: Extended Thinking"** in chat interface
+2. **Toggle ON** and select token budget (1k-20k tokens)
+3. **Ask complex questions** - Opal uses Sonnet 3.5 for detailed analysis
+4. **Get comprehensive answers** with insights and follow-up suggestions
+     - 1k tokens: ~5-10s, Low cost
+     - 5k tokens: ~15-30s, Medium cost (recommended)
+     - 10k tokens: ~30-60s, High cost
+     - 20k tokens: ~60-120s, Very High cost
+
+#### Conversation → Chart Bridge (v1.3.1)
+- Natural flow from questions to visualizations:
+1. **Ask a question** - "What are the revenue trends?"
+2. **Get answer with insight** - AI provides analysis + visualization hint
+3. **Request chart** - Simply say "Can you make a chart showing this?"
+4. **Instant visualization** - Chart auto-created from conversation context
+
+#### Natural Language Commands
+- **Data Questions**: "How many rows?", "List all regions", "What's the average budget?"
+- **Chart Creation**: "Create a bar chart showing sales by region"
+- **Refinement**: "Make it a pie chart instead", "Add profit to the chart"
+- **Suggestions**: "What's the best way to visualize this data?"
+- **Follow-ups**: Click suggested questions to continue exploration
 
 ### Advanced Features
 
@@ -226,6 +240,13 @@ Mint Green:      #00B894    Lavender Blue:   #A29BFE
 - **Testing**: Jest with 94% coverage
 - **Navigation**: React Router 7.9.3
 
+### System Architecture
+- **Frontend**: React 19.1.0 SPA with nginx
+- **Backend**: FastAPI with Apple GenAI integration
+- **Deployment**: Docker + Kubernetes ready
+- **Communication**: REST API with /api proxy
+
+
 ### Key Components
 
 ```
@@ -248,7 +269,11 @@ src/
   │   └── chartSuggestions.ts         # AI chart recommendations
   ├── App.tsx                         # Main application component
   └── index.tsx                       # Application entry point
-
+  ├── backend/
+      │   ├── app/
+      │   │   ├── main.py                # FastAPI application
+      │   │   ├── routers/               # API endpoints
+      │   │   └── services/              # LLM integration
 ```
 
 ### Chart.js Integration
@@ -289,6 +314,26 @@ src/
 
 ## 📋 Changelog
 
+### v1.3.1 "Intelligent Insights"
+- **Added**: Hybrid LLM routing (Sonnet for complex queries, Haiku for simple follow-ups) with 51% cost savings
+- **Added**: Intelligent clarification system - asks smart follow-up questions when query is ambiguous
+- **Added**: InsightPanel component with contextual suggestions and follow-up questions
+- **Added**: Multi-turn clarification with conversation state tracking (max 3 attempts)
+- **Added**: Data-aware insights generation using profile quality scores and correlations
+- **Improved**: Intent parsing with complexity scoring and model selection logic
+- **Improved**: Chat responses now include actionable insights, dataset suggestions, and follow-ups
+- **Enhanced**: Backend prompt engineering with structured response formats and hallucination prevention
+    
+### v1.3.0 "Conversational Intelligence"
+- **Added**: FastAPI backend with GenAI Bridge for LLM access
+- **Added**: Multi-turn conversation with context retention
+- **Added**: Advanced intent parsing and understanding
+- **Added**: Docker production deployment (frontend + backend)
+- **Added**: Kubernetes manifests and autoscaling
+- **Added**: Health checks and monitoring endpoints
+- **Improved**: Chat interface with session management
+- **Improved**: Security with Floodgate backend validation
+
 ### v1.2.0 "Crystal Clarity"
 - **Added**: Enhanced column detection with categorical name bias and statistical validation
 - **Added**: Temporal categorical detection for Quarter, Month, Year, Week columns
@@ -315,6 +360,10 @@ src/
 - **v1.0.0**: Initial release with core charting functionality
 
 
+## 🤝 Contributing
+
+Want to help make Opal better?
+- **Message me on Slack**: Chris Karim
 
 ### Documentation
 - **User Guide**: Available in application help section
@@ -325,4 +374,4 @@ src/
 
 **Built for teams who value simplicity and security**
 
-*Opal v1.2.0 "Crystal Clarity" - Transforming data into insight with precision*
+*Opal v1.3.1 "Conversational Intelligence" - Your data speaks, Opal listens*
