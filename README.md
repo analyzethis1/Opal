@@ -182,6 +182,28 @@ No coding required. No data science degree needed. Just results.
 - **Refinement**: "Make it a pie chart instead", "Add profit to the chart"
 - **Suggestions**: "What's the best way to visualize this data?"
 - **Follow-ups**: Click suggested questions to continue exploration
+- 
+### 🎯 Example Workflows
+
+#### Exploratory Analysis Flow
+1. Upload sales data
+2. Ask "How many unique products sold?" → Get instant count
+3. Ask "Which product generated most revenue?" → Get answer with visualization hint
+4. Say "Show me a chart" → Auto-generated revenue by product chart
+5. Click follow-up: "How does this compare to last year?"
+
+#### Deep Analysis with Extended Thinking
+1. Enable Extended Thinking (5k tokens)
+2. Ask "What patterns do you see in the sales data across regions and time?"
+3. Wait ~20s for comprehensive analysis
+4. Review insights with correlation findings
+5. Click suggested follow-up or create recommended chart
+
+#### Quick Chart Creation
+1. Upload data
+2. Say "Show revenue by quarter"
+3. Review auto-generated chart
+4. Customize styling and export
 
 ### Advanced Features
 
